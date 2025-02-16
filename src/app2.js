@@ -9,10 +9,13 @@ const http = require('http');
 
 // Server create karna
 const server = http.createServer((req, res) => {
-    // res.statusCode = 200; // HTTP status code (OK)
-    // res.setHeader('Content-Type', 'text/plain'); // Response header
+    res.statusCode = 200; // HTTP status code (OK)  that req succesfully serve hogye h
 
-    res.end('Hello, world!'); // Response body
+    res.setHeader('Content-Type', 'text/plain'); // Response header browser ko btarha
+    //  h send kiya hua data kis format main h
+
+    res.end('Hello, world!'); // Response body server ke trf se poora hogya ab response send krdo 
+    
 });
 
 // Server ko listen karwana ek port pe
